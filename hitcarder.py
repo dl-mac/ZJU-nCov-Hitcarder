@@ -90,6 +90,7 @@ class HitCarder(object):
             raise RegexMatchError('Relative info not found in html with regex')
 
         with open("form.txt", "w", encoding="utf-8") as f:
+            print("hah")
             f.write(new_form)
             return True
         #with open("form.txt", "w", encoding="utf-8") as f:
