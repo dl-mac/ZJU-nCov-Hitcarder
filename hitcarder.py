@@ -86,6 +86,7 @@ class HitCarder(object):
 
         try:
             new_form = re.findall(r'<ul>[\s\S]*?</ul>', html)[0]
+            print(new_form)
         except IndexError as _:
             raise RegexMatchError('Relative info not found in html with regex')
 
