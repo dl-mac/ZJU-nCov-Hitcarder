@@ -90,13 +90,9 @@ class HitCarder(object):
         except IndexError as _:
             raise RegexMatchError('Relative info not found in html with regex')
 
-        with open("form.txt", "w", encoding="utf-8") as f:
-            print("hah")
-            f.write(new_form)
-            return True
         #with open("form.txt", "w", encoding="utf-8") as f:
         #     f.write(new_form)
-        return False
+        return True
 
     def get_info(self, html=None):
         """Get hit card info, which is the old info with updated new time."""
